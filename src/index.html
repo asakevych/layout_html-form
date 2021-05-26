@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -12,100 +12,95 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
+
     <form
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="POST"
-    onsubmit="onSubmit()"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      onsubmit="onSubmit()"
     >
-
       <fieldset class="set">
-
         <legend>Personal information</legend>
 
         <div class="form-field">
           <label for="surname">Surname:</label>
           <input
-          type="text"
-          name="Surname"
-          id="surname"
-          required
-        >
-
+            type="text"
+            name="Surname"
+            id="surname"
+            required
+          >
         </div>
         <div class="form-field">
           <label for="name">Name:</label>
           <input
-          type="text"
-          name="Name"
-          id="name"
-          required
+            type="text"
+            name="Name"
+            id="name"
+            required
           >
         </div>
 
         <div class="form-field">
           <label for="age">How old are You?</label>
           <input
-          type="number"
-          name="number"
-          min="0"
-          max="100"
-          value="12"
-          id="age"
+            type="number"
+            name="number"
+            min="0"
+            max="100"
+            value="12"
+            id="age"
           >
         </div>
 
         <div class="form-field">
           <label for="birthDate">Full date of birth:</label>
           <input
-          type="date"
-          name="birthDate"
-          id="birthDate"
-          required>
+            type="date"
+            name="birthDate"
+            id="birthDate"
+            required
+          >
         </div>
 
         <div class="form-field last">
           <label for="terms">I accept the term of the agreement</label>
           <input
-          type="checkbox"
-          name="terms"
-          id="terms"
-          required
+            type="checkbox"
+            name="terms"
+            id="terms"
+            required
           >
         </div>
-
       </fieldset>
 
       <fieldset class="set">
-
         <legend>Registration</legend>
 
         <div class="form-field">
           <label for="email">E-mail:</label>
           <input
-          type="email"
-          name="email"
-          placeholder="email@example.com"
-          id="email"
-          required
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            id="email"
+            required
           >
-
         </div>
+
         <div class="form-field last">
           <label for="password">Password:</label>
           <input
-          type="password"
-          name="password"
-          required
-          minlength="5"
-          maxlength="100"
-          id="password"
+            type="password"
+            name="password"
+            required
+            minlength="5"
+            maxlength="100"
+            id="password"
           >
         </div>
-
       </fieldset>
 
       <fieldset class="set">
-
         <legend>An interesting fact about you!</legend>
 
         <div class="form-field">
@@ -122,35 +117,34 @@
             name="cat"
             value="no"
             id="no-cat"
-            >
+          >
           <label for="no-cat">No</label>
         </div>
 
         <div class="form-field">
           <label for="color">What is your favorite color?</label>
           <input
-          type="color"
-          placeholder="#000"
-          id="color"
-          >
+            type="color"
+            placeholder="#000"
+            id="color">
         </div>
 
         <div class="form-field">
           <label for="time">What time do you go to bed?</label>
           <input
-          type="time"
-          min="20:00"
-          max="05.00"
-          id="time"
+            type="time"
+            min="20:00"
+            max="05.00"
+            id="time"
           >
         </div>
 
         <div class="form-field">
           <label for="brand">What are your favorite brand of cars?</label>
           <select
-          name="brand"
-          multiple
-          id="brand"
+            name="brand"
+            multiple
+            id="brand"
           >
             <option value="bmw">BMW</option>
             <option value="Audi">Audi</option>
@@ -159,23 +153,17 @@
         </div>
 
         <div class="form-field last">
-           How do you rate our work?
+          How do you rate our work?
           <input type="range" value="0">
         </div>
-
       </fieldset>
 
       <fieldset class="set">
-
         <legend>Additional info:</legend>
 
         <div class="form-field">
           <label for="comments">Comments:</label>
-          <textarea
-          name="feedback"
-          id="comments"
-          >
-          </textarea>
+          <textarea name="feedback" id="comments"> </textarea>
         </div>
 
         <div class="form-field last">
@@ -185,7 +173,6 @@
             <option value="no">no</option>
           </select>
         </div>
-
       </fieldset>
 
       <button type="submit" class="set">Submit</button>
